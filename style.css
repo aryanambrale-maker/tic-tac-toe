@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  background-color: #f8fafc;
+  color: #0f172a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.game-container {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  width: min(92%, 440px);
+}
+
+h1 {
+  margin-bottom: 1.25rem;
+  font-size: 1.85rem;
+}
+
+.controls {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.controls input {
+  padding: 0.6rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+.controls button {
+  grid-column: 1 / -1;
+  padding: 0.7rem;
+  background-color: #2563eb;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.controls button:hover {
+  background-color: #1d4ed8;
+}
+
+.status-display {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+  min-height: 1.75rem;
+  color: #1e293b;
+}
+
+.gameboard {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  background-color: #e2e8f0;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.cell {
+  background-color: #ffffff;
+  aspect-ratio: 1 / 1;
+  border: none;
+  border-radius: 6px;
+  font-size: 2.75rem;
+  font-weight: 800;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #0f172a;
+}
+
+.cell:hover {
+  background-color: #f1f5f9;
+}
+
+.cell.x-mark {
+  color: #2563eb;
+}
+
+.cell.o-mark {
+  color: #dc2626;
+}
